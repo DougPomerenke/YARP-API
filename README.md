@@ -1,4 +1,4 @@
-# YARC - Yet Another Retirement Calculator
+# YARC-API - Yet Another Retirement Calculator - API
 
 YARC is a web application that is to be used as a tool for preparing financially for retirement. 
 
