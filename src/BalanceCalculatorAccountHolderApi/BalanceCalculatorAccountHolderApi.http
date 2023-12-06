@@ -1,0 +1,6 @@
+@BalanceCalculatorHolderApi_HostAddress = http://localhost:5055
+
+GET {{BalanceCalculatorAccountHolderApi_HostAddress}}/balanceholder/
+Accept: application/json
+
+###

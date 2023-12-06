@@ -1,0 +1,365 @@
+<------------------------- No longer valid ------------------------------------------->
+{
+  "id": "68b01e14-d0ce-4228-5981-08dbea121742",
+  "firstName": "Doug",
+  "lastName": "Pomerenke",
+  "dateOfBirth": "9/5/1958",
+  "accountStaringBalance": 500000,
+  "retirementAge": 70,
+  "expectedMonthlyRetirementIncome": 50000,
+  "preRetirementMonthlySavingsContribution": 0,
+  "socialSecurityPayoutAge": 80,
+  "socialSecurityPayoutSchedule": [
+    {
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "accountHolderId": "68b01e14-d0ce-4228-5981-08dbea121742",
+      "startingAge": 65,
+      "monthlyPayout": 2720
+    },
+    {
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa7",
+      "accountHolderId": "68b01e14-d0ce-4228-5981-08dbea121742",
+      "startingAge": 66,
+      "monthlyPayout": 2944
+    },
+    {
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa8",
+      "accountHolderId": "68b01e14-d0ce-4228-5981-08dbea121742",
+      "startingAge": 67,
+      "monthlyPayout": 3099
+    },
+    {
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa9",
+      "accountHolderId": "68b01e14-d0ce-4228-5981-08dbea121742",
+      "startingAge": 68,
+      "monthlyPayout": 3281
+    },
+    {
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afb0",
+      "accountHolderId": "68b01e14-d0ce-4228-5981-08dbea121742",
+      "startingAge": 69,
+      "monthlyPayout": 3549
+    },
+    {
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afb1",
+      "accountHolderId": "68b01e14-d0ce-4228-5981-08dbea121742",
+      "startingAge": 70,
+      "monthlyPayout": 3986
+    }
+  ],
+  "financialEvents": [
+    {
+      "id": "3fa05f64-5717-4562-b3fc-2c963f66afb0",
+      "accountHolderId": "68b01e14-d0ce-4228-5981-08dbea121742",
+      "type": "StartingYear",
+      "year": 2023,
+      "values": [550000]
+    },    
+	{
+      "id": "3fa15f64-5717-4562-b3fc-2c963f66afb1",
+      "accountHolderId": "68b01e14-d0ce-4228-5981-08dbea121742",
+      "type": "InflationRateChange",
+      "year": 2023,
+      "values": [0.04, 0.1]
+    },
+	    {
+      "id": "3fa25f64-5717-4562-b3fc-2c963f66afb2",
+      "accountHolderId": "68b01e14-d0ce-4228-5981-08dbea121742",
+      "type": "InvestmentYieldChange",
+      "year": 2023,
+      "values": [-0.1, 0.2]
+    },
+	    {
+      "id": "3fa35f64-5717-4562-b3fc-2c963f66afb3",
+      "accountHolderId": "68b01e14-d0ce-4228-5981-08dbea121742",
+      "type": "SavingChange",
+      "year": 2023,
+      "values": [0]
+    }
+	,    {
+      "id": "3fa45f64-5717-4562-b3fc-2c963f66afb4",
+      "accountHolderId": "68b01e14-d0ce-4228-5981-08dbea121742",
+      "type": "RetirementYear",
+      "year": 2028,
+      "values": [0]
+    }
+	,    {
+      "id": "3fa55f64-5717-4562-b3fc-2c963f66afb5",
+      "accountHolderId": "68b01e14-d0ce-4228-5981-08dbea121742",
+      "type": "SavingChange",
+      "year": 2028,
+      "values": [0]
+    }
+	,    {
+      "id": "3fa65f64-5717-4562-b3fc-2c963f66afb6",
+      "accountHolderId": "68b01e14-d0ce-4228-5981-08dbea121742",
+      "type": "InvestmentYieldChange",
+      "year": 2027,
+      "values": [-0.1, 0.2]
+    }
+	,    {
+      "id": "3fa75f64-5717-4562-b3fc-2c963f66afb7",
+      "accountHolderId": "68b01e14-d0ce-4228-5981-08dbea121742",
+      "type": "InvestmentYieldChange",
+      "year": 2041,
+      "values": [-0.1, 0.2]
+    }
+	,    {
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afb8",
+      "accountHolderId": "68b01e14-d0ce-4228-5981-08dbea121742",
+      "type": "SocialSecurityPayoutYear",
+      "year": 2028,
+      "values": [-0.025, 0.05]
+    }
+	,    {
+      "id": "3fa95f64-5717-4562-b3fc-2c963f66afb9",
+      "accountHolderId": "68b01e14-d0ce-4228-5981-08dbea121742",
+      "type": "LoanPayOffYear",
+      "year": 2041,
+      "values": [1860]
+    }
+  ]
+}
+
+<----------------------------- Use this ---------------------------------->
+{
+  "id": "",
+  "firstName": "Doug",
+  "lastName": "Pomerenke",
+  "dateOfBirth": "9/5/1958",
+  "accountStaringBalance": 500000,
+  "socialSecurityPayouts": [
+    {
+      "startingAge": 65,
+      "monthlyPayout": 2720
+    },
+    {
+      "startingAge": 66,
+      "monthlyPayout": 2944
+    },
+    {
+      "startingAge": 67,
+      "monthlyPayout": 3099
+    },
+    {
+      "startingAge": 68,
+      "monthlyPayout": 3281
+    },
+    {
+      "startingAge": 69,
+      "monthlyPayout": 3549
+    },
+    {
+      "startingAge": 70,
+      "monthlyPayout": 3986
+    }
+  ],
+  "scenario":
+  {
+  "name": "Default",
+  "retirementAge": 70,
+  "expectedMonthlyRetirementIncome": 5000,
+  "preRetirementMonthlySavingsContribution": 0,
+  "socialSecurityPayoutAge": 70
+  },
+  "financialEvents": [
+    {
+      "type": "StartingYear",
+      "year": 2023,
+      "payload": [0]
+    },    
+	{
+      "type": "InflationRateChange",
+      "year": 2023,
+      "payload": [0.04, 0.1]
+    },
+	{
+      "type": "InvestmentYieldChange",
+      "year": 2023,
+      "payload": [-0.1, 0.2]
+    },
+	{
+      "type": "InvestmentYieldChange",
+      "year": 2027,
+      "payload": [-0.1, 0.2]
+    }
+	,    {
+      "type": "InvestmentYieldChange",
+      "year": 2041,
+      "payload": [-0.1, 0.2]
+    }
+	,    {
+      "type": "SocialSecurityPayoutYear",
+      "year": 2028,
+      "payload": [-0.025, 0.05]
+    }
+	,    {
+      "type": "LoanPayOffYear",
+      "year": 2041,
+      "payload": [1860]
+    }
+  ]
+}
+
+<---------------------------------------------------------------------------->
+
+{
+  "id": "",
+  "firstName": "Sample",
+  "lastName": "AccountHolder",
+  "dateOfBirth": "1/1/1960",
+  "accountStaringBalance": 500000,
+  "socialSecurityPayouts": [
+    {
+      "startingAge": 65,
+      "monthlyPayout": 2700
+    },
+    {
+      "startingAge": 66,
+      "monthlyPayout": 2900
+    },
+    {
+      "startingAge": 67,
+      "monthlyPayout": 3100
+    },
+    {
+      "startingAge": 68,
+      "monthlyPayout": 3300
+    },
+    {
+      "startingAge": 69,
+      "monthlyPayout": 3600
+    },
+    {
+      "startingAge": 70,
+      "monthlyPayout": 4000
+    }
+  ],
+  "scenario":
+  {
+  "name": "Default",
+  "retirementAge": 70,
+  "expectedMonthlyRetirementIncome": 6000,
+  "preRetirementMonthlySavingsContribution": 500,
+  "socialSecurityPayoutAge": 70
+  },
+  "financialEvents": [
+    {
+      "type": "StartingYear",
+      "year": 2023,
+      "payload": [500000]
+    },    
+	{
+      "type": "InflationRateChange",
+      "year": 2023,
+      "payload": [0.04, 0.1]
+    },
+	    {
+      "type": "InvestmentYieldChange",
+      "year": 2023,
+      "payload": [-0.1, 0.2]
+    },
+	    {
+      "type": "SavingChange",
+      "year": 2023,
+      "payload": [500]
+    }
+	,    {
+      "type": "RetirementYear",
+      "year": 2033,
+      "payload": [0]
+    }
+	,    {
+      "type": "SavingChange",
+      "year": 2033,
+      "payload": [0]
+    }
+	,    {
+      "type": "InvestmentYieldChange",
+      "year": 2033,
+      "payload": [-0.1, 0.2]
+    }
+	,    {
+      "type": "InvestmentYieldChange",
+      "year": 2041,
+      "payload": [-0.1, 0.2]
+    }
+	,    {
+      "type": "SocialSecurityPayoutYear",
+      "year": 2033,
+      "payload": [-0.025, 0.05]
+    }
+	,    {
+      "type": "LoanPayOffYear",
+      "year": 2041,
+      "payload": [4000]
+    }
+  ]
+  }
+  
+  
+  
+  
+  
+  ,
+  {
+  "name": "Retire Early",
+  "retirementAge": 67,
+  "expectedMonthlyRetirementIncome": 6000,
+  "preRetirementMonthlySavingsContribution": 500,
+  "socialSecurityPayoutAge": 67,
+  "financialEvents": [
+    {
+      "type": "StartingYear",
+      "year": 2023,
+      "payload": [500000]
+    },    
+	{
+      "type": "InflationRateChange",
+      "year": 2023,
+      "payload": [0.04, 0.1]
+    },
+	    {
+      "type": "InvestmentYieldChange",
+      "year": 2023,
+      "payload": [-0.1, 0.2]
+    },
+	    {
+      "type": "SavingChange",
+      "year": 2023,
+      "payload": [500]
+    }
+	,    {
+      "type": "RetirementYear",
+      "year": 2028,
+      "payload": [0]
+    }
+	,    {
+      "type": "SavingChange",
+      "year": 2028,
+      "payload": [0]
+    }
+	,    {
+      "type": "InvestmentYieldChange",
+      "year": 2027,
+      "payload": [-0.1, 0.2]
+    }
+	,    {
+      "type": "InvestmentYieldChange",
+      "year": 2041,
+      "payload": [-0.1, 0.2]
+    }
+	,    {
+      "type": "SocialSecurityPayoutYear",
+      "year": 2028,
+      "payload": [-0.025, 0.05]
+    }
+	,    {
+      "type": "LoanPayOffYear",
+      "year": 2041,
+      "payload": [4000]
+    }
+  ]
+  }
+  ]
+}
