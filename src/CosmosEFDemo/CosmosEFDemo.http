@@ -1,6 +1,0 @@
-@CosmosEFDemo_HostAddress = http://localhost:5132
-
-GET {{CosmosEFDemo_HostAddress}}/cosmos/
-Accept: application/json
-
-###

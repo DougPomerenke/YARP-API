@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C0C3A802-12E4-4190-ADF8-F87925CCC797}"
 	ProjectSection(SolutionItems) = preProject
 		Notes.txt = Notes.txt
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BalanceCalculator", "src\BalanceCalculator\BalanceCalculator.csproj", "{C58B5AB9-565A-48C4-B364-D55E0F97F330}"
