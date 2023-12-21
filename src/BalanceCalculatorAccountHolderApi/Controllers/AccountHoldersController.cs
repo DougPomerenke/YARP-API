@@ -72,31 +72,30 @@ namespace BalanceCalculatorAccountHolderApi.Controllers
         }
 
         [HttpPut("api/{id}")]
-        public async Task<IActionResult> PutAccountHolder(string id, AccountHolder accountHolder)
+        public async Task<IActionResult> PutAccountHolder(string id, AccountHolder updateObject)
         {
-            if (id != accountHolder.Id)
+            if (id != updateObject.Id)
             {
                 return BadRequest();
             }
 
-            //_dbContext.Entry(accountHolder).State = EntityState.Modified;
+            //_dbContext.Entry(updateObject).State = EntityState.Modified;
 
             try
             {
-                var accountHolderEntity = await _dbContext.AccountHolders.Where(e=>e.Id==id).SingleOrDefaultAsync();
-                if (accountHolderEntity != null)
+                var dbEntity = await _dbContext.AccountHolders.Where(e => e.Id == id).SingleOrDefaultAsync();
+                if (dbEntity != null)
                 {
-                    accountHolderEntity.AccountStaringBalance = accountHolder.AccountStaringBalance;
+                    dbEntity.AccountStartingBalance = updateObject.AccountStartingBalance;
+                    dbEntity.DateOfBirth = updateObject.DateOfBirth;
+                    dbEntity.FirstName = updateObject.FirstName;
+                
                     await _dbContext.SaveChangesAsync();
                 }
-
-
-                //_dbContext.Update(accountHolder);
-                //await _dbContext.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!AccountHolderExists(id))
+                if (!AccountHolderExists(updateObject.Id))
                 {
                     return NotFound();
                 }

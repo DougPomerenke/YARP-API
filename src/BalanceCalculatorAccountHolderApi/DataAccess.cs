@@ -24,7 +24,7 @@ namespace BalanceCalculatorAccountHolderApi
 
 
             builder.Entity<AccountHolder>().OwnsMany(p => p.SocialSecurityPayouts);
-            builder.Entity<AccountHolder>().OwnsOne(p => p.Scenario);
+            builder.Entity<AccountHolder>().OwnsMany(p => p.ScenarioSets);
             builder.Entity<AccountHolder>().OwnsMany(p => p.FinancialEvents);
         }
     }

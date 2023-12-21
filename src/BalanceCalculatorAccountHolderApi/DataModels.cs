@@ -10,12 +10,12 @@ namespace BalanceCalculatorAccountHolderApi
         public string LastName { get; set; }
         public string DateOfBirth { get; set; }
 
-        public decimal AccountStaringBalance { get; set; }
+        public decimal AccountStartingBalance { get; set; }
 
         // Schedule from the Social Security Administration that one receives shortly before the age of 65
         public List<SocialSecurityPayout> SocialSecurityPayouts { get; set; }
 
-        public Scenario Scenario { get; set; }
+        public List<Scenario> ScenarioSets { get; set; }
 
         public List<FinancialEvent> FinancialEvents { get; set; }
     }
