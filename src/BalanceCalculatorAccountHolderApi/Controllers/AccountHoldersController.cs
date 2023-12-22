@@ -89,6 +89,9 @@ namespace BalanceCalculatorAccountHolderApi.Controllers
                     dbEntity.AccountStartingBalance = updateObject.AccountStartingBalance;
                     dbEntity.DateOfBirth = updateObject.DateOfBirth;
                     dbEntity.FirstName = updateObject.FirstName;
+                    dbEntity.LastName = updateObject.LastName;
+                    dbEntity.ScenarioSets = updateObject.ScenarioSets;
+                    dbEntity.FinancialEvents = updateObject.FinancialEvents;
                 
                     await _dbContext.SaveChangesAsync();
                 }
