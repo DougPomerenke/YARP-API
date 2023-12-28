@@ -15,7 +15,7 @@ namespace BalanceCalculatorAccountHolderApi
         // Schedule from the Social Security Administration that one receives shortly before the age of 65
         public List<SocialSecurityPayout> SocialSecurityPayouts { get; set; }
 
-        public List<Scenario> ScenarioSets { get; set; }
+        public List<Scenario> Scenarios { get; set; }
 
         public List<FinancialEvent> FinancialEvents { get; set; }
     }

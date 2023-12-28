@@ -90,7 +90,7 @@ namespace BalanceCalculatorAccountHolderApi.Controllers
                     dbEntity.DateOfBirth = updateObject.DateOfBirth;
                     dbEntity.FirstName = updateObject.FirstName;
                     dbEntity.LastName = updateObject.LastName;
-                    dbEntity.ScenarioSets = updateObject.ScenarioSets;
+                    dbEntity.Scenarios = updateObject.Scenarios;
                     dbEntity.FinancialEvents = updateObject.FinancialEvents;
                 
                     await _dbContext.SaveChangesAsync();

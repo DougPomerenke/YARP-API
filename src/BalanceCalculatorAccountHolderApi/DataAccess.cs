@@ -12,7 +12,7 @@ namespace BalanceCalculatorAccountHolderApi
 
         public DbSet<AccountHolder> AccountHolders { get; set; }
         public DbSet<FinancialEvent> FinancialEvents { get; set; }
-        public DbSet<Scenario> ScenarioSets { get; set; }
+        public DbSet<Scenario> Scenarios { get; set; }
         public DbSet<SocialSecurityPayout> SocialSecurityPayouts { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -24,7 +24,7 @@ namespace BalanceCalculatorAccountHolderApi
 
 
             builder.Entity<AccountHolder>().OwnsMany(p => p.SocialSecurityPayouts);
-            builder.Entity<AccountHolder>().OwnsMany(p => p.ScenarioSets);
+            builder.Entity<AccountHolder>().OwnsMany(p => p.Scenarios);
             builder.Entity<AccountHolder>().OwnsMany(p => p.FinancialEvents);
         }
     }
