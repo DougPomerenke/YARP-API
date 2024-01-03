@@ -32,4 +32,11 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+//  Added so that web assembly can connect with api
+app.UseCors(cors => cors
+.AllowAnyMethod()
+.AllowAnyHeader()
+.SetIsOriginAllowed(original => true)
+.AllowCredentials());
+
 app.Run();
