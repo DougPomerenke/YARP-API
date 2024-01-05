@@ -5,6 +5,7 @@ YARP is an application for running Monte Carlo simulations to help one make fina
 
 ### Architecture
 
+![image](https://github.com/DougPomerenke/YARP-API/assets/141588660/e5e61eeb-8631-4a38-b199-4f91812f7c8d)
 
 ### Usage
 Data inputs are current account balance, retirement age, social security payout age, monthly contributions till retirement, and monthly retirement income. The simulation runs over a 50 year timeframe, or until the account balance goes negative. The age of the account holder when this happens is saved in a statistics component. As more iterations of the simulation are run, the resulting age is added to the history component. The statistical data is displayed. Currently, the minus one sigma value is used as an indicator for a successful plan.
