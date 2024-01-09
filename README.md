@@ -34,6 +34,15 @@ Dependencies:
 Microsoft.EntityFrameworkCore.Cosmos  (API solution)
 Blazor.Bootstrap  (UI solution)
 
-Get your copy of the source code for both projects, YARP-UI and YARP-API
-Download and install the Cosmos DB emulation. Follow the link
+Get your copy of the source code for both solutions, YARP-UI and YARP-API
+Install the Cosmos DB emulation. Follow the link for download link and instructions.
+Launch the Azure Cosmos DB Emulator from the Start Menu. Bookmark this URL for later use. If you close this tab, the emulator continues to run.
+Copy the Account Key produced by the DB install into Program.cs in the BalanceCalculatorAccountHolderApi project.
+Start the API in debug, there should be two Swaggar Windows that open.
+Copy the contents of the YARP-API "src\Sample Data for CosmosDB.txt" file into the Swagger BalanceCalculatorAccountHolderApi POST method's request body. This should created the DB schema and insert the data.
+Verify the DB contents with the Swagger's BalanceCalculatorAccountHolderApi POST method.
+Start the UI in debug.
+
+
+
 
