@@ -18,10 +18,22 @@ For each year of a simulation run, values for inflation and rate of return are r
 
 Currently, there is no installer for yarp. It requires a Windows development environment and some proficiency in Visual Studio and the .NET framework.
 
-Development Environment:
-
+OS:
 Windows 10 Pro
-Microsoft Visual Studio Community 2022 (64-bit) - Preview Version 17.9.0 Preview 1.1
 
-Cosmsos Db Emulator
+Platform:
+.NET 8
+
+Development Environment:
+Microsoft Visual Studio Community 2022 (64-bit) - Preview Version 17.9.0 Preview 1.1 (Or later)
+
+Cosmsos Db Emulator:
 https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-develop-emulator?tabs=windows%2Ccsharp&pivots=api-mongodb  (Link valid, 1/9/2024)
+
+Dependencies:
+Microsoft.EntityFrameworkCore.Cosmos  (API solution)
+Blazor.Bootstrap  (UI solution)
+
+Get your copy of the source code for both projects, YARP-UI and YARP-API
+Download and install the Cosmos DB emulation. Follow the link
+
