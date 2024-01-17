@@ -75,7 +75,7 @@ private readonly ILogger<BalanceCalculatorController> _logger;
                                     }
                                     if (inputParameters[parameterIndex].LifeEventType == LifeEventType.SavingChange.ToString())
                                     {
-                                        balanceCalculator.AnnualSavingsContribution = (decimal)inputParameters[parameterIndex].DecimalValue;
+                                        balanceCalculator.AnnualSavingsContribution = 12*(decimal)inputParameters[parameterIndex].DecimalValue; // Savings are handled as a monthly value until here.
                                     }
                                     if (inputParameters[parameterIndex].LifeEventType == LifeEventType.InvestmentYieldChange.ToString())
                                     {
