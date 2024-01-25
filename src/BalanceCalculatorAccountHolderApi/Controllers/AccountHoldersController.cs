@@ -24,7 +24,7 @@ namespace BalanceCalculatorAccountHolderApi.Controllers
             }
         }
 
-        [HttpGet("/api")]
+        [HttpGet("/api/AccountHolders")]
         public async Task<IActionResult> GetAllAccountHolders()
         {
             try
@@ -37,7 +37,7 @@ namespace BalanceCalculatorAccountHolderApi.Controllers
             }
         }
 
-        [HttpGet("/api/{id}")]
+        [HttpGet("/api/AccountHolders/{id}")]
         public async Task<IActionResult> GetAccountHolder(string id)
         {
             try
@@ -50,16 +50,13 @@ namespace BalanceCalculatorAccountHolderApi.Controllers
             }
         }
 
-        [HttpPost("api")]
-        public async Task<IActionResult> CreateAccountHolder([FromBody] AccountHolder accountHolder)
+        [HttpPost("api/AccountHolders/")]
+        public async Task<IActionResult> CreateAccountHolder(AccountHolder accountHolder)
         {
             try
             {
-                if(accountHolder.Id.Length>0 == false)
-                {
-                    accountHolder.Id = Guid.NewGuid().ToString();
-                }   
-
+                accountHolder.Id = Guid.NewGuid().ToString();
+  
                 var addedAccountHolder = await _dbContext.AddAsync(accountHolder);
                 await _dbContext.SaveChangesAsync();
 
@@ -70,9 +67,8 @@ namespace BalanceCalculatorAccountHolderApi.Controllers
                 return BadRequest(ex.Message);
             }
         }
-
-        [HttpPut("api/{id}")]
-        public async Task<IActionResult> PutAccountHolder(string id, AccountHolder updateObject)
+        [HttpPut("api/AccountHolders/{id}")]
+        public async Task<IActionResult> UpdateAccountHolder(string id, AccountHolder updateObject)
         {
             if (id != updateObject.Id)
             {
@@ -110,6 +106,32 @@ namespace BalanceCalculatorAccountHolderApi.Controllers
 
             return NoContent();
         }
+
+
+        [HttpDelete("api/AccountHolders/{id}")]
+        public async Task<IActionResult> DeleteAccountHolder(string id)
+        {
+
+            try
+            {
+                var dbEntity = await _dbContext.AccountHolders.Where(e => e.Id == id).SingleOrDefaultAsync();
+                if (dbEntity != null)
+                {
+                    _dbContext.Remove(dbEntity);
+
+                    await _dbContext.SaveChangesAsync();
+                }
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                 return NotFound();
+
+            }
+
+            return NoContent();
+        }
+
+
 
         private bool AccountHolderExists(string id)
         {
